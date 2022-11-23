@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container {  
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.3fr;
+    grid-template-areas:
+      "header header header header header"
+      "section1 section1 section2 section2 section2"
+      "section1 section1 section3 section3 section3"
+      "section4 section4 section5 section5 section5"
+      "section6 section6 section6 section6 section6"
+      "footer footer footer footer footer";
+    }
+    .header { 
+        grid-area: header; 
+        background-color: black; 
+        color:purple;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header img{
+      width: 250px;
+    }
+    .header ul{
+        display: flex;
+        list-style-type: none;
+        padding: 10px;
+        color: blueviolet;
+      }
+    .header ul li{
+        margin:10px;
+        padding: 10px;
+        border: 2px blueviolet;
+    }
+    .header ul li a{
+      color:purple;
+    }
+    img{
+        width: 150px;
+        border-radius: 10%;
+        margin:10px;
+    }
+     h2{
+        text-align: center;
+        margin:10px;
+      }
+    p{
+      padding: 10px;
+    }
+    .img{
+        text-align: center;
+        margin:10px;
+        border-radius: 10%;
+        transition: all 1.5s ease;
+     }
+     img:hover{
+        transform: scale(1.2,1);
+     }
+     section{
+      border: purple 3px solid;
+      background-color: rgb(175, 170, 170)
+    
+     }
+     .section1 { 
+        grid-area: section1;    
+    }
+      .section2 { 
+        grid-area: section2;   
+    }
+      .section3 { 
+        grid-area: section3;     
+    }
+      .section4 { 
+        grid-area: section4; 
+    }  
+      .section5 { 
+        grid-area: section5;
+     }  
+      .section6 { 
+        grid-area: section6;
+    }  
+      .footer { 
+        grid-area: footer; 
+        background-color: black;
+        color:purple;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer img{
+      width: 150px;
+    }
+    @media screen and (max-width:768px){
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "header header header header"
+      "section1 section1 section2 section2"
+      "section1 section1 section3 section3"
+      "section4 section4 section4 section4"
+      "section5 section5 section6 section6"
+      "footer footer footer footer";
+        }
+    }
+    @media screen and (max-width:600px){
+        .container{
+            grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "section1"
+      "section1"
+      "section4"
+      "section5"
+      "section6"
+      "footer";
+        }
+        .header{
+            flex-direction: column;
+            align-items: center;
+        }
+        body{
+            background-color: rgb(236, 236, 147);
+    }
+    }   
+     .mobile{
+        background-color: yellow;
+     }
+     .formulario{
+        color: white;
+
+        }
+.mobile{
+    @media screen and (max-width:600px){
+        .container{
+            grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "section1"
+      "section1"
+      "section4"
+      "section5"
+      "section6"
+      "footer";
+        }
+}
+
+}
