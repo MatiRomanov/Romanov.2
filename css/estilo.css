@@ -44,7 +44,7 @@ body{
       color:purple;
     }
     img{
-        width: 150px;
+        width: 250px;
         border-radius: 10%;
         margin:10px;
     }
@@ -116,7 +116,8 @@ body{
     grid-template-areas:
       "header"
       "section1"
-      "section1"
+      "section2"
+      "section3"
       "section4"
       "section5"
       "section6"
@@ -144,7 +145,8 @@ body{
     grid-template-areas:
       "header"
       "section1"
-      "section1"
+      "section2"
+      "section3"
       "section4"
       "section5"
       "section6"
@@ -186,10 +188,7 @@ body{
     border: solid 2px purple;
 }
 .formulario{
-    h1
-        color: purple;
-
-    
+  color: purple; 
 }
 body{
     background-image: url(../multimedia/doby.png);
@@ -203,4 +202,33 @@ body{
 .mobile{
     background-color: yellow;
     background-image: none;
+}
+nav{
+  text-align: right;
+  font-weight: lighter;
+  color: rgb(240, 224, 10);
+}
+.menu{
+  padding: 0;
+    width: 90%;
+    margin: 20px auto;
+    opacity: 0.8;
+    text-shadow: 0 0 30px #fff;
+    color: purple;
+}
+.menu .item{
+  display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+}
+.menu .item a{
+  color: purple;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+.menu .item:hover a{
+  background-color: grey;
+  color: black;
 }
