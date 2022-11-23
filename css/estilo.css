@@ -153,3 +153,54 @@ body{
 }
 
 }
+
+.galeria{
+    color: white;
+
+}
+.galeria h1{
+    color: purple;
+}
+.sectionProductos{
+    opacity:1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sectionProductos img{
+    width: 250px;
+    border: double 2px purple;
+    margin: 10px;
+    opacity: 0.5;
+}
+.divImg img:hover{
+    opacity: 1;
+    border: solid 2px purple;
+}
+.formulario{
+    h1{
+        color: purple;
+
+    }
+}
+body{
+    background-image: url(../multimedia/doby.png);
+}
+.formulario h1{
+    color: purple;
+}
+.headerapk{
+    background-color: yellow;
+}
+.mobile{
+    background-color: yellow;
+    background-image: none;
+}
