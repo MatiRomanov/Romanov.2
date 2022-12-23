@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+  background-color: black;
 }
 .container {  
     display: grid;
@@ -24,7 +24,7 @@ body{
         color:purple;
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        
     }
     .header img{
       width: 250px;
@@ -106,31 +106,33 @@ body{
       "section1 section1 section2 section2"
       "section1 section1 section3 section3"
       "section4 section4 section4 section4"
-      "section5 section5 section6 section6"
+      "section4 section5 section6 section6"
       "footer footer footer footer";
         }
+  }
+  @media screen and (max-width:767px){
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+grid-template-areas:
+  "header header header header"
+  "section1 section1 section1 section1"
+  "section2 section2 section2 section2"
+  "section3 section3 section3 section3"
+  "section4 section4 section4 section4"
+  "section5 section5 section5 section5"
+  "section6 section6 section6 section6"
+  "footer footer footer footer";
     }
-    @media screen and (max-width:600px){
-        .container{
-            grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "section1"
-      "section2"
-      "section3"
-      "section4"
-      "section5"
-      "section6"
-      "footer";
-        }
+}
+  
+    
         .header{
             flex-direction: column;
             align-items: center;
         }
         body{
             background-color: rgb(236, 236, 147);
-    }
-    }   
+    }       
      .mobile{
         background-color: yellow;
      }
@@ -138,23 +140,9 @@ body{
         color: white;
 
         }
-.mobile{
-    @media screen and (max-width:600px){
-        .container{
-            grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "section1"
-      "section2"
-      "section3"
-      "section4"
-      "section5"
-      "section6"
-      "footer";
-        }
-}
 
-}
+
+
 
 .galeria{
     color: white;
@@ -188,7 +176,14 @@ body{
     border: solid 2px purple;
 }
 .formulario{
-  color: purple; 
+  color: rgb(255, 255, 255); 
+  margin: auto;
+  padding: auto;
+  
+}
+.mainformulario{
+background-color: rgb(65, 63, 66);
+
 }
 body{
     background-image: url(../multimedia/doby.png);
@@ -231,4 +226,9 @@ nav{
 .menu .item:hover a{
   background-color: grey;
   color: black;
+}
+.maingaleria{
+  padding: auto;
+  margin: auto;
+  background-color: rgb(61, 47, 58);
 }
